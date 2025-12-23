@@ -1,0 +1,35 @@
+body {
+    background-color: #fbffdf;
+    color: #003b15;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tabs {
+    border: 10px solid #003b15;
+    display: block;
+}
+
+.tabs__topbar {
+    margin-left: 14px;
+    margin-top: 14px;
+    flex-shrink: 1;
+}
+
+.tabs__content {
+    margin-left: 10px;
+}
+
+.tabs__button {
+    display:ruby;
+    padding: 6px;
+    border-radius: 1px;
+    border-width: 2px;
+    border-color: #232323;
+    font: 500;
+}
