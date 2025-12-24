@@ -51,3 +51,47 @@ document.addEventListener("keydown", e => {
             break;
     }
 })
+
+function launchRocket() {
+    const rocket = document.createElement("img");
+    rocket.src = "./images/Rocket.gif";
+    rocket.style.position = "fixed";
+    rocket.style.scale = .5;
+    rocket.style.left = "50%";
+    rocket.style.transform = "translateX(-50%)";
+
+    let y = document.documentElement.scrollHeight;
+    let x = window.innerWidth - 800;
+    const speedY = 17;
+    const speedX = 3;
+    rocket.style.top = y + "px";
+    rocket.style.left = x + "px";
+    document.body.appendChild(rocket);
+
+    function animate(){
+        y-= speedY;
+        x-= speedX;
+
+        rocket.style.top = y + "px";
+        rocket.style.left = x + "px";
+
+        if(y + rocket.height < 0){
+            rocket.remove();
+            return;
+        }
+
+        requestAnimationFrame(animate);
+    }
+
+    requestAnimationFrame(animate);
+}
+
+function handlePointerDown(e) {
+    console.log(e.pageY);
+    if(e.pageY <= 550) { 
+        launchRocket();
+        window.removeEventListener("pointerdown", handlePointerDown);
+    }
+}
+
+window.addEventListener("pointerdown", handlePointerDown);
