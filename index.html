@@ -7,18 +7,22 @@
     <title>Dylan Coy</title>
 </head>
 <body>
-    <h1><strong>Welcome to Dylan Coy's Portfolio Site</strong></h1>
     <div class="tabs">
         <div class="tabs__topbar">
-            <button class="tabs__button" data-for-tab="intro">Introduction</button>
+            <button class="tabs__button tabs__button--active" data-for-tab="intro">Introduction</button>
             <button class="tabs__button" data-for-tab="software">Software Dev</button>
             <button class="tabs__button" data-for-tab="game dev">Game Design</button>
             <button class="tabs__button" data-for-tab="life">Personal Life</button>
         </div>
-        <div class="tabs__content" data-tab="intro">
-            <h2>Introduction</h2>
+        <div class="tabs__content tabs__content--active" data-tab="intro">
+            <h1>Introduction</h1>
+            <h2><em>Hello World!</em></h2>
+            <img src="images/SoloPicture.jpg" alt="Dylan Coy" id="SoloPicture">
             <p>
-                this is the intro data
+                My name is Dylan Coy, I am a current senior at the University of Wisconsin-Madison<br>
+                Welcome to my portfolio! If you want to learn more about me, my interests, and my skills then you are in the right place.<br>
+                This site is a project of mine done for fun over winter break to grow my frontend development skills. There are lots of hidden easter eggs to find.<br>
+                Press 'w' to use the first one! (and press 'enter' to stop)
             </p>
         </div>
         <div class="tabs__content" data-tab="software">
@@ -44,5 +48,7 @@
 </body>
 
 <script src="app.js"></script>
+
+<audio src="audio/JumpAround.mp3" class="background" id="JumpAround"></audio>
 
 </html>
