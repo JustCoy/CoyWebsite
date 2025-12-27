@@ -1,5 +1,5 @@
 body {
-    min-height: 100vh;
+    min-height: 100dvh;
     background-image: url(images/BackgroundSpaceScreen.png);
     background-size: cover;
     background-repeat: no-repeat;
