@@ -1,8 +1,10 @@
 body {
     min-height: 100dvh;
     background-image: url(images/BackgroundSpaceScreen.png);
-    background-size: cover;
+    background-size: 100dvw auto;
     background-repeat: no-repeat;
+    background-color: #000000;
+    background-position: center top;
     color: #000000;
     font-size: 24px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
